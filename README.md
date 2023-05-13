@@ -6,7 +6,7 @@ https://github.com/ в <a target="_blank" href="https://allure.autotests.cloud/p
 В Allure Report отображается вся информация по пройденной сборке
 ![изображение](https://github.com/DachAnna/selenide_github_test/assets/118796374/52c56623-4a26-48de-b033-b0ee336e3630)
 
-Запуск тестов с заполненным remote.properties:
+Запуск тестов с заполненным properties:
 ```bash
 gradle clean test
 ```
