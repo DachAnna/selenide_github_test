@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Owner("allure8")
-public class GithubTest {
+public class GithubTest extends TestBase{
 
     @Test
     @AllureId("18956")
@@ -17,7 +17,7 @@ public class GithubTest {
     @Tags({@Tag("critical")})
     void findExampleForJUnit5OnPageSelenideWiki(){
         step("Открыть главную страницу", () -> {
-                open("https://github.com");
+                open("/");
         });
 
         step("Найти репозиторий \"selenide\"", () -> {
