@@ -14,7 +14,6 @@ import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
 
 @Owner("allure8")
-@Layer("web")
 public class GithubTest extends TestBase {
 
     @Test
@@ -23,6 +22,7 @@ public class GithubTest extends TestBase {
     @Tags({@Tag("critical"), @Tag("UI-tests")})
     @Microservice("Issue")
     @Feature("Поиск")
+    @Layer("web")
     void findExampleForJUnit5OnPageSelenideWiki() {
         step("Открыть главную страницу", () -> {
             open("/");
@@ -72,6 +72,7 @@ public class GithubTest extends TestBase {
     @Tags({@Tag("critical"), @Tag("UI-tests")})
     @Microservice("Issue")
     @Feature("Поиск")
+    @Layer("web")
     void SearchIssue() {
         step("Открыть главную страницу", () -> {
             open("/");
